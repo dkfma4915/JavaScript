@@ -9,7 +9,7 @@ function deleteToDo(event){
     const btn = event.target;
     const li = btn.parentNode;
     toDoList.removeChild(li);
-    const cleanToDos = toDos.filter(function(toDo){ //???
+    const cleanToDos = toDos.filter(function(toDo){ //제거할 항목을 제외하고 걸러내기
         return toDo.id !== parseInt(li.id);
     })
     toDos = cleanToDos;
